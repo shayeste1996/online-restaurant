@@ -1,0 +1,45 @@
+.btn {
+  &--bordered {
+    border: 0.1rem solid $color-grey-4;
+    border-radius: 10rem;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  &--truncated {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30rem;
+  }
+  &--has-cart{
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 36rem;
+    margin-left: 0;
+  }
+  &--has-address{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: $color-yellow-1;
+    border-color: $color-yellow-1;
+    width: 10rem;
+    margin-left: 0;
+  }
+  &--sort{
+    margin: 0 8rem;
+    color: #000000;
+    padding: 12px 16px;
+    max-width: 150px;
+    font-size: 15px;
+    line-height: 1.2;
+    border-radius: 28px;
+    background-color: #f5f5f5;
+    transition-duration: 200ms;
+    transition-property: background-color color;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+}

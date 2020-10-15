@@ -1,0 +1,85 @@
+.food {
+  &__items {
+    margin-right: 1.2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    line-height: 1.75;
+
+    &:hover {
+      background-color: $color-grey-3;
+    }
+    &--active {
+      &:focus {
+        background-color: $color-yellow-1;
+      }
+    }
+  }
+  &__search-box {
+    padding: 2rem 8rem;
+    width: 100%;
+    &--input {
+      border: 1px solid #eee;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+  &__time-box {
+    height: 100%;
+    color: $color-grey-2;
+    border: 1px solid #eee;
+    padding: 0 0.5rem;
+    position: relative;
+    background: linear-gradient(to bottom, $color-white, $color-grey-3);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1.6rem;
+    min-width: 30rem;
+    font-size: 1.5rem;
+  }
+  &__suggestion {
+    &--list {
+      box-shadow: 0 2px 7px 0 rgba($color-black, 0.15);
+    }
+    &--item {
+      display: flex;
+      margin: 1rem 2rem;
+      min-height: 5.5rem;
+      align-items: flex-start;
+      padding: 2rem 0;
+      border-bottom: 1px solid $color-grey-3;
+    }
+    &--bg-image {
+      background: $color-grey-3
+        url("/static/images/restaurants/fallback-pattern.svg") center/ 24rem;
+      width: 3.6rem;
+      float: left;
+      height: 3.6rem;
+      overflow: hidden;
+      margin-top: 1rem;
+      margin-right: 1.6rem;
+      border-radius: 1rem;
+    }
+    &--image {
+      width: 100%;
+      height: 100%;
+    }
+    &--text {
+      flex: 1;
+      margin-top: 0.6rem;
+      padding-right: 20px;
+    }
+    &--Tag {
+      height: 1.6rem;
+      display: flex;
+      overflow: hidden;
+      flex-wrap: wrap;
+      align-items: center;
+      color: $color-grey-4;
+    }
+  }
+}
